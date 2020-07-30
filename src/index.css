@@ -4,29 +4,26 @@
 }
 ::-webkit-scrollbar {
   width: 20px;
-  background-color: black;
+  background-color: rgb(17, 17, 17);
 }
 
 /* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgb(0, 0, 0);
-  border-radius: 10px;
-}
+
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ff4f4f;
-  border-radius: 10px;
+  background: rgba(255, 0, 0, 0.089);
+  
 }
 
 :root {
-  --primary: #ff4f4f;
+  --primary: red;
   --black: #000000;
   --blackLighter: #9E9E9E;
   --grayLight: #F5F5F5;
   --grayMedium: #e5e5e5; 
   --white: #FFFFFF;
-  --frontEnd: #ff4f4f;
+  --frontEnd: red;
   --backEnd: #8a0035;
 }
 
