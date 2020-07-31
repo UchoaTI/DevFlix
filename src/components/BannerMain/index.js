@@ -35,6 +35,7 @@ export default function BannerMain({
           <VideoIframeResponsive
             youtubeID={youTubeID}
           />
+          
           <WatchButton>
             Assistir
           </WatchButton>
@@ -43,3 +44,4 @@ export default function BannerMain({
     </BannerMainContainer>
   );
 }
+//pinto

@@ -12,6 +12,8 @@ export const Title = styled.h3`
   line-height: 1;
   border-radius: 15px;
 
+  
+
   @media (max-width: 800px) {
     font-size: 18px;
     padding: 10px;
