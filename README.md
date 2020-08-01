@@ -14,6 +14,8 @@ npm install
 npm start
 ```
 
+ou para ver um preview no navegador : https://dev-flix.uchoati.vercel.app
+
 
 ## License/Licença do Projeto
 [MIT License](./LICENSE) © [Alura](http://alura.com.br/)
