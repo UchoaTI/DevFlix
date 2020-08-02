@@ -15,10 +15,10 @@ function CadastroCategoria() {
 
 
   function setValue(chave, valor) {
-    // chave: nome, descricao, bla, bli
+    
     setValues({
       ...values,
-      [chave]: valor, // nome: 'valor'
+      [chave]: valor, 
     })
   }
 
@@ -29,16 +29,18 @@ function CadastroCategoria() {
     );
   }
 
-  // ============
+  
 
   useEffect(() => {
     if(window.location.href.includes('localhost')) {
-      const URL = 'http://localhost:8080/categorias'; 
+      const URL = 'http://localhost:3001/categorias'; 
       fetch(URL)
        .then(async (respostaDoServer) =>{
-        if(respostaDoServer.ok) {
+        if(respostaDoServer) {
           const resposta = await respostaDoServer.json();
-          setCategorias(resposta);
+          setCategorias([
+              ...resposta,
+          ]);
           return; 
         }
         throw new Error('Não foi possível pegar os dados');
@@ -111,7 +113,10 @@ function CadastroCategoria() {
           Cadastrar
         </ButtonBlack>
       </form>
-      
+      {categorias.length === 0 && (
+      <div>
+          loading...
+      </div>)}
 
       <ul>
         {categorias.map((categoria, indice) => {
