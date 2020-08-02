@@ -5,7 +5,6 @@ function Footer() {
   return (
     <FooterBase>
       <a href="https://www.alura.com.br/">
-        
       </a>
       <p>
         Orgulhosamente criado durante a
