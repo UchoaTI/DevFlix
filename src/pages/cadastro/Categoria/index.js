@@ -29,11 +29,11 @@ function CadastroCategoria() {
     );
   }
 
-  // ============
+  
 
   useEffect(() => {
     if(window.location.href.includes('localhost')) {
-      const URL = 'https://developerflix22.herokuapp.com'; 
+      const URL = 'https://developerflix22.herokuapp.com/categorias'; 
       fetch(URL)
        .then(async (respostaDoServer) =>{
         if(respostaDoServer.ok) {
